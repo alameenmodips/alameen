@@ -1,0 +1,167 @@
+/* CSS variables*/
+:root {
+    --primary: #654;
+    --dark: white;
+    --light: mediumseagreen;
+    --shadow: 0 10px 30px rgba(104, 104, 104, 0.8);
+}
+/* html properties*/
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+}
+/*body properties*/
+body {
+    background: #ccc;
+    margin: 10px 50px;
+    line-height: 1.4;
+}
+/*html wrapper style*/
+.wrapper {
+    display: grid;
+    grid-gap:80px;
+}
+/*layer control style*/
+.main-nav ul {
+    display: list-item;
+    list-style: column-gap;
+    column-gap: 40px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	font-size: 2rem;
+    grid-gap: 10px;
+}
+.main-nav a {
+    background: grey;
+    display: block;
+    text-decoration: none;
+    padding: 0rem;
+    text-align: center;
+    color: var(--dark);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    box-shadow: var(--shadow);
+	font-size: 2rem;
+}
+/*layer hover effect*/
+.main-nav a:hover {
+    background: var(--dark);
+    color: var(--light)
+}
+/* Top Container*/
+.top-container {
+    display: grid;
+    grid-gap: 50px;
+    grid-template-areas:
+    'showcase showcase top-box-b'
+    'showcase showcase top-box-a'
+    'showcase showcase top-box-c'   
+}
+/*showcase*/
+.showcase {
+    grid-area: showcase;
+    background-size: content;
+	color: var(--light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow);
+    background-color: white;
+     border-style: solid 1px  black;
+}
+/*topbox*/
+.top-box {
+    background: white;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    box-shadow: var(--shadow);
+    padding: 0rem;
+	text-transform: uppercase;
+	color: grey;
+}
+/*topbox a*/
+.top-box-a {
+    grid-area: top-box-a;
+	font-size:2rem;
+    align-content: center;
+    text-align: center;
+    border-style:solid 1px  black;
+}
+/*topbox b*/
+.top-box.b {
+    grid-area: top-box-b;
+	font-size: 2rem;
+    align-content: center;
+     border-style:solid 1px  black;
+}
+/*topbox c*/
+.top-box.c {
+    grid-area: top-box-b;
+    font-size: 2rem;
+    align-content: center;
+     border-style: 1px solid black;
+}
+/*header four*/
+h4 {
+    font-size: 2.8rem;
+    display: grid;
+    text-align: right;
+	color: green;
+}
+/*header nine*/
+h9 {
+    font-size: 2.5rem;
+    display: grid;
+    text-align: center;
+    color: grey;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+}
+/*header ninety nine*/
+h99 {
+    font-size: 2.5rem;
+    display: grid;
+    text-align: center;
+    color: grey;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+}
+/*paragraph eleven*/
+p11 {
+    font-size: 3.5rem;
+    display: grid;
+    text-align: center;
+    color: grey;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+}
+/*coordinates*/
+p {
+    color: red;
+    font-size:3rem;
+}
+/*header element*/
+header {
+    margin-top: 1rem;
+    background: var(--dark);
+    color: var(--light);
+    text-align: center;
+    padding: 0.8rem;
+    font-size:3.8rem ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+/*footer element*/
+footer {
+    margin-top: 0rem;
+    background: var(--dark);
+    color: var(--light);
+    text-align: center;
+    padding: 0.8rem;
+    font-size: 2.3rem;
+    color: black;
+}
